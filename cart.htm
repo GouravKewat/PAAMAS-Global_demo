@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="./Styles_sheets/styles_product.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="Navbar" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Navbar -->
+                <a class="logo" href="./index.html">
+                    <!-- Logo -->
+                    <img src="./asset/logo.png" alt="logo"> <!-- Adjust height as needed -->
+                </a>
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <!-- Mobile Toggle Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navigation Links -->
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0"> <!-- ms-auto aligns links to the right -->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./student_m.html">Student</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./product_k.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./account.html">Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="main-container">
+            <!-- Cart Section -->
+            <div class="cart-container">
+                <h2 class="cart-title">Your Cart</h2>
+                <div id="cart-content" class="cart-content">
+                    <!-- Cart items will be dynamically added here -->
+                     
+                </div>
+
+                <!-- Order Summary -->
+                <div id="order-summary" class="order-summary">
+                    <h5>Order Summary</h5>
+                    <ul>
+                        <li>Products (<span id="total-items">0</span>) <span>₹<span id="subtotal">0</span></span></li>
+                        <li>Shipping <span>₹<span id="shipping">30</span></span></li>
+                        <li class="total">Total Amount <span>₹<span id="total-amount">30</span></span></li>
+                    </ul>
+                    <button id="checkout-btn" class="checkout-btn">Go to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Logo and Description -->
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img src="./asset/logo.png" alt="Site Logo">
+                    </div>
+                    <h5 class="footer-title">PAAMAS GLOBAL PVT LTD.</h5>
+                    <p class="footer-description">
+                        Brain development is a lifelong process. Nurturing a healthy brain through various activities
+                        and lifestyle choices supports optimal cognitive function and overall well-being.
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="footer-widget">
+                    <h5 class="footer-title">Useful Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="./student_m.html" class="footer-link">Students</a></li>
+                        <li><a href="./product_k.html" class="footer-link">Kit Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-widget">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li class="footer-contact-item">📍 223 “2nd floor Siddhivinayak Tower Shaheed park Freeganj
+                            Ujjain” M.P.</li>
+                        <li class="footer-contact-item">📞 <a href="tel:+919977774401" class="footer-link">+91
+                                9977774401</a></li>
+                        <li class="footer-contact-item">📞 <a href="tel:+918817480685" class="footer-link">+91
+                                8817480685</a></li>
+                        <li class="footer-contact-item">✉️ <a href="mailto:globalpaamas@gmail.com"
+                                class="footer-link">globalpaamas@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Script_main/script_product_k.js"></script>
+</body>
+
+</html>

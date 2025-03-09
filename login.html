@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link href="./Styles_sheets/styles_login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Background Image -->
+        <img src="./Asset/bg-1.png" alt="background" class="background-image">
+
+        <!-- Logo -->
+        <div class="logo-container">
+            <img class="logo" src="./Asset/logo.png" alt="logo">
+        </div>
+
+        <!-- Welcome Text -->
+        <div class="welcome-text">
+            <h1 class="welcome-title">Welcome</h1>
+            <h3 class="welcome-subtitle">to</h3>
+            <h1 class="welcome-title">PAAMAS GLOBAL</h1>
+        </div>
+
+        <!-- Login/Signup Form -->
+        <div class="auth-form-container">
+            <h2 id="form-title" class="form-title">Login</h2>
+            <form id="auth-form">
+                <!-- Fullname Field (Conditional Rendering) -->
+                <div id="fullname-field" class="form-field hidden">
+                    <input type="text" id="fullname" placeholder="Fullname" class="form-input" required />
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-field">
+                    <input type="email" id="email" placeholder="Email" class="form-input" required />
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-field">
+                    <input type="password" id="password" placeholder="Password" class="form-input" required />
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submit-btn" class="submit-button">
+                    Login
+                </button>
+            </form>
+
+            <!-- Toggle Between Login and Signup -->
+            <p class="toggle-text">
+                <span id="toggle-text">Don't have an account? </span>
+                <button id="toggle-btn" class="toggle-button">
+                    Sign Up
+                </button>
+            </p>
+        </div>
+    </div>
+
+    <script src="./Script_main/script_login_u.js"></script>
+</body>
+
+</html>
